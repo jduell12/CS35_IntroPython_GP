@@ -65,8 +65,8 @@ squares = []
 for i in range(len(numbers)):
     squares.append(numbers[i]**2)
 
-print(numbers)
-print(squares)
+# print(numbers)
+# print(squares)
 # Filtering with a list comprehension
 evens = []
 
@@ -77,7 +77,7 @@ for i in range(len(numbers)):
 
 # create a new list of even numbers using the values of the numbers list as inputs
 
-print(evens)
+# print(evens)
 
 # create a new list containing only the names that start with 's' make sure they are capitalized (regardless of their original case)
 names = ["Sarah", "jorge", "sam", "frank", "bob", "sandy"]
@@ -88,14 +88,28 @@ for i in range(len(names)):
     if name[0] == 'S':
         s_names.append(name)
 
-print(s_names)
+# print(s_names)
 
 # Dictionaries
 
 # Create a new dictionary
 
 # empty
+d1 = {}
+d2 = dict()
 
 # key value pairs
-
+d3 = {
+    "name": "Tom",
+    5676: 'woooo',
+    'age': 40
+}
 # access an element via its key
+d3["name"]  # => Tom
+print(d3["name"])
+print(d3[5676])  # => wooo
+
+# add new key/value to dictionary
+d3["height"] = 345
+# prints entire dictionary
+print(d3)
