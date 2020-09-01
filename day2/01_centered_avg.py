@@ -18,6 +18,7 @@
 
 # my solution
 # def centered_average(listNums):
+#     #makes sure not to change original list
 #     listToChange = []
 #     for i in range(len(listNums)):
 #         listToChange.append(listNums[i])
@@ -58,6 +59,9 @@ apply the algorithm of sum divided by the length of our list minus 2
 """
 
 
+import statistics
+
+
 def centered_avg(ints):
     minNum = min(ints)
     maxNum = max(ints)
@@ -73,6 +77,16 @@ def centered_avg(ints):
     return sum // (len(ints)-2)
 
 
-numbers = [1, 1, 5, 5, 10, 8, 7]
+numbers = [-10, -4, -2, -4, -2, 0]
 print(centered_avg(numbers))
+print(numbers)
+
+
+def centered_average(ints):
+    ints.sort()
+    return int(statistics.mean(ints[1:-1]))
+
+
+numbers = [1, 3, 2, 7, 9, 0]
+print(centered_average(numbers))
 print(numbers)
