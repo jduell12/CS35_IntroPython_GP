@@ -81,6 +81,8 @@ numbers = [-10, -4, -2, -4, -2, 0]
 print(centered_avg(numbers))
 print(numbers)
 
+# using methods - per lecture takes 30-40% slower
+
 
 def centered_average(ints):
     ints.sort()
