@@ -16,7 +16,7 @@ y = 7
 a = "5"
 b = "7"
 "57"
-print(str(x).__add__(y))
+print(str(x).__add__(str(y)))
 
 
 # define a doubling function that passes args by value
