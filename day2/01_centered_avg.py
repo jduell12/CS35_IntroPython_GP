@@ -80,6 +80,7 @@ def centered_avg(ints):
 numbers = [-10, -4, -2, -4, -2, 0]
 print(centered_avg(numbers))
 print(numbers)
+##################################################################################
 
 # using methods - per lecture takes 30-40% slower
 
