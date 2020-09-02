@@ -17,3 +17,25 @@
 # v = new Vec2(12, 23);
 
 # this keyword === self keyword
+
+# Python Classes
+# Encapsulation / Data Hiding
+# __method -> private
+# _method -> protected
+# method -> public
+
+class Vec2:
+    # python constructor for the class
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __my_thing__(self, name):
+        print(f"My name is {name}: ({self.x}, {self.y})")
+
+    def call_my_thing(self, name):
+        self.__my_thing__(name)
+
+
+v = Vec2(12, 23)
+v.call_my_thing('Bob')
