@@ -10,7 +10,8 @@ class Store:
     def __str__(self):
         ret = self.name
         for i, c in enumerate(self.categories):
-            ret += "\n " + str(i + 1) + ": " + c + "\n"
+            ret += "\n " + str(i + 1) + ": " + c.name + "\n"
+        ret += "\n " + str(i+2) + ": Exit \n"
         return ret
 
     # represent class data for developer
