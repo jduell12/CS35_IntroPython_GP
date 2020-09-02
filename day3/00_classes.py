@@ -39,3 +39,4 @@ class Vec2:
 
 v = Vec2(12, 23)
 v.call_my_thing('Bob')
+v.call_my_thing('Dave')
