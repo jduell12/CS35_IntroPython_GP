@@ -1,4 +1,5 @@
 # subclass of Product
+
 from product import Product
 
 
